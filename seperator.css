@@ -1,0 +1,14 @@
+.grid {
+    border: solid 1px #e7e7e7;
+}
+
+.grid__row {
+    display: flex;
+}
+
+.grid__item {
+    flex: 1;
+    padding: 12px;
+    border: solid 1px #e7e7e7;
+
+}

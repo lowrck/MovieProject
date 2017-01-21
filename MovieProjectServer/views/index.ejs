@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Movie Search</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <style>
+      div.img {
+        margin: 5px;
+        border: 1px solid #ccc;
+        float: left;
+        width: 180px;
+      }
+
+      div.img:hover {
+        border: 1px solid #777;
+      }
+
+      div.img img {
+        width: 100%;
+        height: auto;
+      }
+
+      div.desc {
+        padding: 15px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body style="background-color: teal">
+  <div style="height: 75%; width: 85vw; background-color: white;">
+  <br><br>
+  <h1>Your movie score was: <%= score %></h1>
+
+  <br><br><br>
+
+  <div class="img">
+    <a target="_blank" href="/images/iamlegend.jpeg">
+      <img src="/images/iamlegend.jpeg" alt="iamlegend" width="300" height="200">
+    </a>
+    <div class="desc">I Am Legend</div>
+  </div>
+
+  <div class="img">
+    <a target="_blank" href="/images/macgyver.jpg">
+      <img src="/images/macgyver.jpg" alt="Forest" width="300" height="200">
+    </a>
+    <div class="desc">Macgyver</div>
+  </div>
+
+  <div class="img">
+    <a target="_blank" href="/images/soundofmusic.jpeg">
+      <img src="/images/soundofmusic.jpeg" alt="Sound Of Music" width="300" height="200">
+    </a>
+    <div class="desc">Sound Of Music</div>
+  </div>
+
+  </div>
+  </body>
+</html>
