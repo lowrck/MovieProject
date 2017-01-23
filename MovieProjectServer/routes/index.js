@@ -15,15 +15,15 @@ router.post('/', function(req, res, next) {
 
   var moviename = req.body.moviename;
   console.log(req.body);
-  var url = "http://www.omdbapi.com/?r=json&t=" + encodeURIComponent(moviename);
+  var url = "http://www.omdbapi.com/?r=json&tomatoes=true&t=" + encodeURIComponent(moviename);
   console.log(moviename);
   console.log(url);
   request(url, function(error, response, body) {
 
     console.log(body);
     var data = JSON.parse(body);
-    var scoredata = data.imdbRating * 10;
-    res.render('index', {score: scoredata + "%"});
+    var scoredata = data.tomatoMeter + "%";
+    res.render('index', {score: scoredata});
 
   })
 
